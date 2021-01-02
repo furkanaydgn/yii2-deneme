@@ -1,0 +1,36 @@
+{
+  "name": "furkanaydgn\n/\nyii2-deneme",
+  "description": "Yii2 Content Module DEMO",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "furkanaydgn",
+      "email": "furkanaydogance@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "~2.0.13"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "8.*.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "furkanaydgn\\content\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "furkanaydgn\\content\\tests\\": "tests"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
