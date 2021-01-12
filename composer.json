@@ -19,12 +19,12 @@
   },
   "autoload": {
     "psr-4": {
-      "furkanaydgn\\content\\": "src"
+      "furkanaydgn\\deneme\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "furkanaydgn\\content\\tests\\": "tests"
+      "furkanaydgn\\deneme\\tests\\": "tests"
     }
   },
   "repositories": [
