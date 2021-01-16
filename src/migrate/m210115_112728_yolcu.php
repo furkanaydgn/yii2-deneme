@@ -39,9 +39,7 @@ class m210115_112728_yolcu extends Migration
      */
     public function safeDown()
     {
-        echo "m210115_112728_yolcu cannot be reverted.\n";
-
-        return false;
+        return $this->dropTable('yolcu');
     }
 
     /*
