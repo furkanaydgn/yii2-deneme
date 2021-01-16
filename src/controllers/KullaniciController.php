@@ -8,7 +8,7 @@ use furkanaydgn\deneme\models\KullaniciSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use furkanaydgn\deneme\models\Firmalistesi;
 /**
  * KullaniciController implements the CRUD actions for Kullanici model.
  */
@@ -65,13 +65,22 @@ class KullaniciController extends Controller
     public function actionCreate()
     {
         $model = new Kullanici();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->uid]);
+
+          $deneme=Firmalistesi::findOne($model->fid);
+   
+            $deneme->koltuksayisi	 -= $model->biletsayisi;
+            $deneme->save();
+          
+            return $this->render('view', [
+                'model' => $this->findModel($model->uid),
+                'deneme' => $deneme,
+            ]);
         }
 
         return $this->render('create', [
             'model' => $model,
+            
         ]);
     }
 

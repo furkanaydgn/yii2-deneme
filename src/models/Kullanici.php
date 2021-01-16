@@ -46,13 +46,13 @@ class kullanici extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'uid' => 'Uid',
-            'userssim' => 'Userssim',
-            'useroyisim' => 'Useroyisim',
-            'useryas' => 'Useryas',
-            'usercinsiyet' => 'Usercinsiyet',
-            'fid' => 'Fid',
-            'biletsayisi' => 'Biletsayisi',
+            'uid' => 'Kullanıcı Id',
+            'userssim' => 'Yolcu İsim',
+            'useroyisim' => 'Yolcu Soyisim',
+            'useryas' => 'Yolcu Yaş',
+            'usercinsiyet' => 'Yolcu Cinsiyet',
+            'fid' => 'Firma  Id',
+            'biletsayisi' => 'Bilet Sayısı',
         ];
     }
 
