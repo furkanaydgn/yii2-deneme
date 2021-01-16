@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $searchModel furkanaydgn\deneme\models\KullaniciSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Kullanici';
+$this->title = 'Yolcu';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="kullanici-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Yeni Kullanici', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Yeni Yolcu', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
