@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model furkanaydgn\deneme\models\Kullanici */
 
-$this->title = ' Kullanici Ekle';
+$this->title = ' Yolcu Ekle';
 $this->params['breadcrumbs'][] = ['label' => 'Kullanici', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

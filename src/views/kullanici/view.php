@@ -8,7 +8,7 @@ use furkanaydgn\deneme\models\Firmalistesi;
 /* @var $model furkanaydgn\deneme\models\Kullanici */
 
 $this->title = $model->uid;
-$this->params['breadcrumbs'][] = ['label' => 'Kullanici', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Yolcu', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>

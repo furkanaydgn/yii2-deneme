@@ -69,7 +69,7 @@ float:left;
 
 <div class="topnav" style="text-align: right">
  <a id="home" href=index.php?r=deneme/firmalistesi>Bilet Rezervasyon</a>
-  <a href="index.php?r=deneme/kullanici">Kullanici Bilgileri</a>
+  <a href="index.php?r=deneme/kullanici">Yolcu Bilgi</a>
   <a href="index.php?r=deneme/firmalistesi">Bilet Al /Firma Liste</a>
   <a href="index.php?r=deneme/alinanbiletler">Alınan Biletler</a>
 </div>

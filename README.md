@@ -1,9 +1,9 @@
 # yii2-deneme
 
-
+#### Furkan Aydoğan / 180202085 
 
 Bu modül online Otobüs Bilet Rezervasyon sayfasının ana ekranı olarak tasarlanmıştır. 
-Modül admin tarafından erişilmek üzere tasarlanmıştır. Yolcu ve Otobüs Firması ekleme
+Modül admin tarafından erişilmek üzere tasarlanmıştır. Yolcu veya Otobüs Firması ekleme
 çıkartma veya düzenleme işlemlerini sadece admin yapabilir.
 Yolcu Bilgi sayfasından "Yeni Kullanıcı" butonuna tıklayarak yeni yolcu eklenebilir
 veya hali hazırda eklenmiş olan yolcuların bilgilerine erişim sağlanabilir .Aynı ekrandan 
@@ -44,21 +44,49 @@ composer update
 
 
 ### Migration'larla tabloların oluşturulması ve kayıt eklenmesi
-Modülün kullanılabilmesi için gerekli tabloların oluşturulması ve örnek kayıtların girilmesi için aşağıdaki kodlar çalıştırılmalıdır. RBAC, tablolar üzerinden yapıldığından migration kodlarının çalıştırılmasıyla tablolar, kurallar ve ilişkiler oluşturuluyor.
+Modülün kullanılabilmesi için gerekli tabloların oluşturulması ve örnek kayıtların girilmesi için aşağıdaki kodlar çalıştırılmalıdır. 
 ```
 vagrant ssh
 php yii migrate/up yolcu --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 php yii migrate/up firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 ```
 
+
+### Veritabanı ve Foreign Key ilişkisi
+
+![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/7.png)
+
 ### Backend
 
 Bütün modül backend  altında geliştirilmiştir.
 furkanaydgn/deneme/migrate adresinde varolan ürün kayıtlarını görebilir, 
-Nav-Bar 'daki Alınan Biletler Sayfası ile veritabanındaki alınan biletlere erişilir ."Yeni bilet eklemesi admin tarafından yapılabilir.
-Nav-Bar 'daki Bilet Al / Firma Liste Sayfası ile admin tarafından "Yeni Firma ekle " butonu ile veritabanına yeni bir firma eklenebilir yine aynı şekilde "bilet Al " butonuna tıklanarak bir yolcu için bir veya birden daha fazla bilet alınabilir.
-Nav-Bar 'daki Yolcu Bilgi Sayfası ile bütün biletleri alınmış yolcuların bilgileri görüntülenebilir ve admin tarafından yeni bir yolcu eklemesi veya düzenleme ,silme işlemleri yapılabilir
+###### Nav-Bar 'daki Alınan Biletler Sayfası ile veritabanındaki alınan biletlere erişilir ."Yeni bilet eklemesi admin tarafından yapılabilir.
+###### Nav-Bar 'daki Bilet Al / Firma Liste Sayfası ile admin tarafından "Yeni Firma ekle " butonu ile veritabanına yeni bir firma eklenebilir yine aynı şekilde "bilet Al " butonuna tıklanarak bir yolcu için bir veya birden daha fazla bilet alınabilir.
+###### Nav-Bar 'daki Yolcu Bilgi Sayfası ile bütün biletleri alınmış yolcuların bilgileri görüntülenebilir ve admin tarafından yeni bir yolcu eklemesi veya düzenleme ,silme işlemleri yapılabilir
 
+
+Ana Sayfaya erişim için alttaki linke gidilmesi gerekmektedir.
+```
+http://advanced/backend/web/index.php?r=deneme/firmalistesi
+```
+####### Alınan Biletler
 ![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/1.png)
+####### Alınmış olan bilete ait detaylar
+![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/5.png)
+
+####### Yolcu Ekleme Sayfası
+![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/4.png)
+
+####### Otobüs Firmasına Ait Detaylar
+![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/6.png)
+
+
+####Widget
+Widget kullanımına örnek olarak gii'nin oluşturduğu gridview özelleştirilerek kullanıldı. Ek olarak Nav-Bar widgetları eklendi.
+![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/3.png)
+
+##### Home_page
+
+![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/2.png)
 
 

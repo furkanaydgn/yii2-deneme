@@ -3,7 +3,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+use yii\helpers\ArrayHelper;
+use furkanaydgn\deneme\models\Firmalistesi;
 /* @var $this yii\web\View */
 /* @var $model furkanaydgn\deneme\models\Alinanbiletler */
 /* @var $form yii\widgets\ActiveForm */
@@ -21,7 +22,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'usercinsiyet')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'fid')->textInput() ?>
+    <?= $form->field($model, 'fid')->dropDownList(ArrayHelper::map(Firmalistesi::find()->all(),'fid','fad'),['prompt'=>'firmalistesi']); ?>
+
 
     <?= $form->field($model, 'biletsayisi')->textInput() ?>
 
