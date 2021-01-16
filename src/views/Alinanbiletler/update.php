@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model furkanaydgn\deneme\models\Alinanbiletler */
 
 $this->title = 'Bilet Güncelle ' . $model->uid;
-$this->params['breadcrumbs'][] = ['label' => 'Alinanbiletlers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Alinan biletler', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->uid, 'url' => ['view', 'id' => $model->uid]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>

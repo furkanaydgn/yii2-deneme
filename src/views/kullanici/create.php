@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model furkanaydgn\deneme\models\Kullanici */
 
 $this->title = ' Yolcu Ekle';
-$this->params['breadcrumbs'][] = ['label' => 'Kullanici', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Yolcu', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="kullanici-create">
