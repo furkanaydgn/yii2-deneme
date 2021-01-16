@@ -1,10 +1,13 @@
 <?php
 
-namespace furkanaydgn\content;
-class Module extends \yii\base\Module
+namespace furkanaydgn\deneme;
+use Yii;
+class Module extends  \yii\base\Module
 {
     public function init()
     {
+
         parent::init();
+
     }
 }
