@@ -40,9 +40,7 @@ class m210115_022610_firma extends Migration
      */
     public function safeDown()
     {
-        echo "m210115_022610_firma cannot be reverted.\n";
-
-        return false;
+       return $this->dropTable('firma');
     }
 
     /*
