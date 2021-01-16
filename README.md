@@ -2,7 +2,6 @@
 
 #### Furkan Aydoğan / 180202085 
 
-## Modül Özet
 
 Bu modül online Otobüs Bilet Rezervasyon sayfasının ana ekranı olarak tasarlanmıştır. 
 Modül admin tarafından erişilmek üzere tasarlanmıştır. Yolcu veya Otobüs Firması ekleme
@@ -47,7 +46,6 @@ composer update
 
 ### Migration'larla tabloların oluşturulması ve kayıt eklenmesi
 
-
 Modülün kullanılabilmesi için gerekli tabloların oluşturulması ve örnek kayıtların girilmesi için aşağıdaki kodlar çalıştırılmalıdır. 
 ```
 vagrant ssh
@@ -73,36 +71,6 @@ Ana Sayfaya erişim için alttaki linke gidilmesi gerekmektedir.
 ```
 http://advanced/backend/web/index.php?r=deneme/firmalistesi
 ```
-####### Alınan Biletler
-
-
-![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/1.png)
-
-####### Alınmış olan bilete ait detaylar
-
-
-![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/5.png)
-
-####### Yolcu Ekleme Sayfası
-
-
-![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/4.png)
-
-####### Otobüs Firmasına Ait Detaylar
-
-
-![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/6.png)
 
 
 ####Widget
-
-
-Widget kullanımına örnek olarak gii'nin oluşturduğu gridview özelleştirilerek kullanıldı. Ek olarak Nav-Bar widgetları eklendi.
-![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/3.png)
-
-####Home_page
-
-
-![enter image description here](https://github.com/furkanaydgn/yii2-deneme/blob/main/src/images/2.png)
-
-
