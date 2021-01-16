@@ -50,7 +50,7 @@ class Alinanbiletler extends \yii\db\ActiveRecord
             'useroyisim' => 'İsim',
             'useryas' => 'Yaş',
             'usercinsiyet' => 'Cinsiyet',
-            'fid' => 'Fid',
+            'fid' => 'Firma Id',
             'biletsayisi' => 'Alınan bilet sayisi',
         ];
     }

@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model furkanaydgn\deneme\models\Firmalistesi */
 
-$this->title = ' Firmalistesi';
+$this->title = ' Firma Listesi';
 $this->params['breadcrumbs'][] = ['label' => 'Firma listesi', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

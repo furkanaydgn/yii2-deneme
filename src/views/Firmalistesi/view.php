@@ -8,7 +8,7 @@ use yii\widgets\DetailView;
 /* @var $model furkanaydgn\deneme\models\Firmalistesi */
 
 $this->title = $model->fad;
-$this->params['breadcrumbs'][] = ['label' => 'Firmalistesi', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Firma listesi', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
