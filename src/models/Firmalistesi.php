@@ -43,13 +43,13 @@ class Firmalistesi extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'fid' => 'Fid',
+            'fid' => 'Firma Id',
             'fad' => 'Frma Adı',
             'kalkisnoktasi' => 'Kalkış Noktası',
             'varisnoktasi' => 'Varış Noktası',
             'biletucret' => 'Bilet Ücreti',
             'cagrımerkezi' => 'Çağrı Merkezi',
-            'koltuksayisi' => 'Koltuk Sayısı',
+            'koltuksayisi' => 'Kalan Koltuk Sayısı',
         ];
     }
 }
