@@ -49,12 +49,21 @@ composer update
 
 
 Modülün kullanılabilmesi için gerekli tabloların oluşturulması ve örnek kayıtların girilmesi için aşağıdaki kodlar çalıştırılmalıdır. 
+
 ```
 vagrant ssh
 php yii migrate/up yolcu --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 php yii migrate/up firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 ```
+Veritabanının kaldırılması için
 
+```
+php yii migrate/down yolcu --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
+php yii migrate/dow firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
+```
+
+
+Not : Veritabanı çakışmasını engellemek için önceden kurulan modüllere ait veritabanları silinmelidir .
 
 ### Veritabanı ve Foreign Key ilişkisi
 
