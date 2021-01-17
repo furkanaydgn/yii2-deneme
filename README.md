@@ -54,12 +54,7 @@ vagrant ssh
 php yii migrate/up yolcu --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 php yii migrate/up firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 ```
-Veritabanının kaldırılması için
 
-```
-php yii migrate/down yolcu --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
-php yii migrate/down firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
-```
 Not : Veritabanı çakışmasını engellemek için önceden kurulan modüllere ait veritabanları silinmelidir .
 
 
