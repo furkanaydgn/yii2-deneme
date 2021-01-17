@@ -59,7 +59,7 @@ Veritabanının kaldırılması için
 
 ```
 php yii migrate/down yolcu --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
-php yii migrate/dow firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
+php yii migrate/down firma --migrationPath=@vendor/furkanaydgn/yii2-deneme/src/migrate
 ```
 
 
