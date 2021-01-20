@@ -47,7 +47,7 @@ class Alinanbiletler extends \yii\db\ActiveRecord
         return [
             'uid' => 'Kullanıcı İd',
             'userssim' => 'Kullanici Isim',
-            'useroyisim' => 'İsim',
+            'useroyisim' => 'Kullanıcı Soyisim',
             'useryas' => 'Yaş',
             'usercinsiyet' => 'Cinsiyet',
             'fid' => 'Firma Id',
