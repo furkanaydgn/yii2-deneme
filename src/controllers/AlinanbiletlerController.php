@@ -8,7 +8,7 @@ use furkanaydgn\deneme\models\AlinanbiletlerSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use furkanaydgn\deneme\models\Firmalistesi;
 /**
  * AlinanbiletlerController implements the CRUD actions for Alinanbiletler model.
  */
@@ -64,12 +64,19 @@ class AlinanbiletlerController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Alinanbiletler();
+     $model = new Alinanbiletler();
+        if($model->load(Yii::$app->request->post()) && $model->save())
+        {
+            $deneme=Firmalistesi::findOne($model->fid);
+            if($model->biletsayisi < $deneme->koltuksayisi){
+                $deneme->koltuksayisi-= $model->biletsayisi;
+                $deneme->save();
+                return $this->redirect(['view', 'id' => $model->uid]);
+            }
+            else
+                Yii::$app->session->setFlash('error', 'Kalan bilet sayısından fazla bilet girilemez.Lütfen daha düşük bilet sayısı giriniz');
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->uid]);
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
