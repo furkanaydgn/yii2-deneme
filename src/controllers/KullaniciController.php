@@ -65,22 +65,22 @@ class KullaniciController extends Controller
     public function actionCreate()
     {
         $model = new Kullanici();
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if($model->load(Yii::$app->request->post()) && $model->save()){
+            $deneme=Firmalistesi::findOne($model->fid);
+            if($model->biletsayisi < $deneme->koltuksayisi){
+                $deneme->koltuksayisi-= $model->biletsayisi;
+                $deneme->save();
+                return $this->render('view', [
+                    'model' => $this->findModel($model->uid),
+                    'deneme' => $deneme,
+                ]);
+            }
+            else
+                Yii::$app->session->setFlash('error', 'Kalan bilet sayısından fazla bilet girilemez.Lütfen daha düşük bilet sayısı giriniz');
 
-          $deneme=Firmalistesi::findOne($model->fid);
-   
-            $deneme->koltuksayisi	 -= $model->biletsayisi;
-            $deneme->save();
-          
-            return $this->render('view', [
-                'model' => $this->findModel($model->uid),
-                'deneme' => $deneme,
-            ]);
         }
-
         return $this->render('create', [
             'model' => $model,
-            
         ]);
     }
 
